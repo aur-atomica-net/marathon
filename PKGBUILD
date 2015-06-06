@@ -3,9 +3,9 @@
 pkgname=marathon
 pkgver=0.8.2
 pkgrel=1
-pkgdesc='Fault tolerant job scheduler for Mesos which handles dependencies and ISO8601 based schedules'
+pkgdesc='Deploy and manage containers (including Docker) on top of Apache Mesos at scale.'
 arch=('any')
-url='http://mesos.github.io/marathon/'
+url='https://mesosphere.github.io/marathon/'
 license=('Apache')
 depends=('java-runtime' 'java-environment')
 # makedepends=('sbt')
