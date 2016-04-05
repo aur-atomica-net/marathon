@@ -1,0 +1,14 @@
+
+[Unit]
+Description=Marathon
+After=network.target
+Wants=network.target
+
+[Service]
+EnvironmentFile=/etc/conf.d/marathon
+ExecStart=/usr/bin/java $JAVA_OPTIONS -jar /usr/share/marathon/marathon.jar $OPTIONS
+Restart=always
+RestartSec=20
+
+[Install]
+WantedBy=multi-user.target
